@@ -1,3 +1,4 @@
+"use client"
 import { atom, useRecoilState } from 'recoil';
 
 const countState = atom({
