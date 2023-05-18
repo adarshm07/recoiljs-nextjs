@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link';
 import { atom, useRecoilState } from 'recoil';
 
 const countState = atom({
@@ -17,6 +18,8 @@ export default function Home() {
       <h3>Counter: {count}</h3>
       <button onClick={increment}>Increment</button>
       <button onClick={decrement}>Decrement</button>
+
+      <Link href="/dashboard">Dashboard</Link>
     </div>
   )
 }
